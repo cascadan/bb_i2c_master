@@ -100,6 +100,10 @@ typedef struct
  * 
  *                   Works like cb_sda_high_z()
  * 
+ * cb_sda_read:      Callback to read the SDA line.
+ * 
+ *                   This function must returns 0 (LOW) or 1 (HIGH)
+ * 
  * NOTE: It is recommended to initialize the interface **before** start the periodic 
  *       calling of bb_i2c_master_edge_processor() (i.e. before enable the timer 
  *       interruption).
